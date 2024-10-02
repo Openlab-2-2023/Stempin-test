@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Separ - Fotky z koncertov</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #1e1e2f;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 64px;
+            color: #4b0082;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4b0082;
+            color: #ffffff;
+            margin-top: 40px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Fotky z koncertov Separa</h1>
+
+        <div class="gallery">
+            <img src="HTML/images/moshpit.jpg" />
+            <img src="HTML\images\čiernobiele.png" />
+            <img src="images/concert.jpg" />
+            <img src="images/separ zelena.jpg" />
+            
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Separ - Fotky z koncertov. Všetky práva vyhradené.
+    </footer>
+
+</body>
+</html>
