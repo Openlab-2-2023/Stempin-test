@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil študenta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-card {
+            width: 400px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .profile-card .info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-card .info h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .profile-card .info p {
+            color: #222;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .profile-card .info .details {
+            text-align: left;
+            font-size: 1em;
+            margin-top: 15px;
+            color: #555;
+            position: relative;
+        }
+
+        .profile-card .info .details p::before {
+            content: '\2022';
+            color: #333;
+            font-weight: bold;
+            display: inline-block;
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .profile-card .extra-info {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            background: #f9fafb;
+            padding: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            transition: bottom 0.3s ease;
+            text-align: left;
+            font-size: 1em;
+        }
+
+        .profile-card:hover .extra-info {
+            bottom: 0;
+        }
+
+        .profile-card .extra-info h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .profile-card .extra-info ul {
+            list-style: none;
+        }
+
+        .profile-card .extra-info ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="foto/successful-college-student-lg.png">
+        <div class="info">
+            <h2>Jaromír Zásuvka</h2>
+            <p>Študent strednej priemyselnej školy</p>
+            <div class="details">
+                <p>Vek: 17 rokov</p>
+                <p>Ročník: 3. ročník</p>
+                <p>Obľúbený predmet: Informatika</p>
+            </div>
+        </div>
+        <div class="extra-info">
+            <h3>Dodatočné informácie</h3>
+            <ul>
+                <li>Záľuby: Basketbal, programovanie, čítanie kníh</li>
+                <li>Školský projekt: Vývoj mobilnej aplikácie</li>
+                <li>Plány do budúcnosti: Štúdium IT na vysokej škole</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
